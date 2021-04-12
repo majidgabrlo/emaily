@@ -10,7 +10,7 @@ class SurveyList extends React.Component {
     return this.props.surveys.reverse().map((survey) => {
       return (
         <div className="card blue-grey darken-2" key={survey._id}>
-          <div className="card-content whit-text">
+          <div className="card-content white-text">
             <span className="card-title right-align">{survey.title}</span>
             <p className="right-align">{survey.body}</p>
             <p>Sent On: {new Date(survey.dateSent).toLocaleDateString()}</p>
