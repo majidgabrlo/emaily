@@ -6,7 +6,7 @@ const userSchema = new Schema({
   googleId: String,
   email: String,
   name: String,
-  credit: { type: Number, default: 0 },
+  credit: { type: Number, default: 2 },
 });
 
 mongoose.model('users', userSchema);
