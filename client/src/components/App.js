@@ -5,8 +5,9 @@ import * as actions from '../actions';
 
 import Header from './Header';
 import Landing from './Landing';
+import SurveyNew from './surveys/SurveyNew';
+import Dashboard from './Dashboard';
 
-const Dashboard = () => <h2>Dashboard</h2>;
 class App extends React.Component {
   componentDidMount() {
     this.props.fetchUser();
@@ -20,7 +21,7 @@ class App extends React.Component {
             <Header />
             <Route exact path="/" component={Landing} />
             <Route exact path="/surveys" component={Dashboard} />
-            {/* <Route path="/surveys/new" component={SurveyNew} /> */}
+            <Route path="/surveys/new" component={SurveyNew} />
           </div>
         </BrowserRouter>
       </div>
